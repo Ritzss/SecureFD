@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neon-dark text-gray-100;
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply border border-neon-primary shadow-neon transition-shadow duration-300;
+  }
+  
+  .neon-border:hover {
+    @apply shadow-neon-hover;
+  }
+  
+  .neon-text {
+    @apply text-neon-primary;
+    text-shadow: 0 0 5px theme(colors.neon.primary), 0 0 20px theme(colors.neon.primary);
+  }
+  
+  .neon-button {
+    @apply px-6 py-3 rounded-md bg-transparent border border-neon-primary text-neon-primary shadow-neon 
+           transition-all duration-300 hover:shadow-neon-hover hover:bg-neon-primary hover:bg-opacity-10;
+  }
+}
