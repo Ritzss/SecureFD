@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+
 import { Hero } from '../components/Landing/Hero';
 import { Features } from '../components/Landing/Features';
 import { CallToAction } from '../components/Landing/CallToAction';
